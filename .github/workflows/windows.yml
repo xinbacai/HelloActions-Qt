@@ -59,7 +59,7 @@ jobs:
           #   msvc_arch: x64
           #   qt_arch_install: msvc2019_64
     env:
-      targetName: HemodialySis-Qt.exe
+      targetName: HelloActions-Qt.exe #windows-publish.ps1 脚本中有名字校验
     # 步骤
     steps:
       # 安装Qt
