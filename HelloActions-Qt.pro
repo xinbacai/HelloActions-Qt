@@ -1,6 +1,6 @@
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets core gui sql webenginewidgets printsupport  network
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets core gui sql network
 
 CONFIG += c++11
 TARGET= HemodialySis-Qt
