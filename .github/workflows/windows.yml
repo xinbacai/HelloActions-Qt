@@ -65,7 +65,7 @@ jobs:
       # 安装Qt
       - name: Install Qt
         # 使用外部action。这个action专门用来安装Qt
-        uses: jurplel/install-qt-action@v3
+        uses: jurplel/install-qt-action@v2
         with:
           # Version of Qt to install
           version: ${{ matrix.qt_ver }}
@@ -75,7 +75,7 @@ jobs:
           cached: 'false'
           aqtversion: '==2.0.5'          
       # 拉取代码
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 1
       # msvc编译
@@ -104,7 +104,7 @@ jobs:
            echo "::set-output name=packageName::$name"       
       # tag 查询github-Release
       # 上传artifacts          
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v2
         with:
           name: ${{ steps.package.outputs.packageName }}
           path: ${{ steps.package.outputs.packageName }}
